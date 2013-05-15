@@ -9,6 +9,9 @@ hitheme     : tomorrow      #
 widgets     : [bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 license     : by-nc-sa
+github      :
+  user      : mages
+  repo      : googleVis_on_shiny
 ---
 
 ## Disclaimer
