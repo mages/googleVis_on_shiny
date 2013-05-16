@@ -1,7 +1,7 @@
 googleVis on shiny tutorial
 ===========================
 
-Slides for the avanced R workshop at Lancaster University, 21 May 2013
+[Slides](http://mages.github.io/googleVis_on_shiny/) for the avanced R workshop at Lancaster University, 21 May 2013
 
 ### License 
 
