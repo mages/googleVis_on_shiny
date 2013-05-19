@@ -26,9 +26,9 @@ github      :
 ## Introduction of shiny
 
 * R Package shiny from RStudio supplies
-* interactive web application  / dynamic HTML-Pages with plain R
-* GUI for own needs
-* Website as server
+  * interactive web application  / dynamic HTML-Pages with plain R
+  * GUI for own needs
+  * Website as server
 
 ---
 
@@ -49,7 +49,7 @@ github      :
 3. Edit ```global.r```
 4. Edit ```ui.r```
 5. Edit ```server.r```
-6. ```R> shiny::runApp("Example Hello Shiny")```
+6. ```R> shiny::runApp("HelloShiny")```
 
 ---
 
@@ -58,7 +58,9 @@ github      :
 This file contains global variables, libraries etc.  [optional]
 
 ```{r global, eval=FALSE}
+## E.g.
 library(googleVis)
+The_Answer <- 42
 ```
 
 ---

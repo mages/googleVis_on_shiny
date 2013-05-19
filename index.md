@@ -26,9 +26,9 @@ github      :
 ## Introduction of shiny
 
 * R Package shiny from RStudio supplies
-* interactive web application  / dynamic HTML-Pages with plain R
-* GUI for own needs
-* Website as server
+  * interactive web application  / dynamic HTML-Pages with plain R
+  * GUI for own needs
+  * Website as server
 
 ---
 
@@ -49,7 +49,7 @@ github      :
 3. Edit ```global.r```
 4. Edit ```ui.r```
 5. Edit ```server.r```
-6. ```R> shiny::runApp("Example Hello Shiny")```
+6. ```R> shiny::runApp("HelloShiny")```
 
 ---
 
@@ -59,7 +59,9 @@ This file contains global variables, libraries etc.  [optional]
 
 
 ```r
+## E.g.
 library(googleVis)
+The_Answer <- 42
 ```
 
 
@@ -425,7 +427,7 @@ sessionInfo()
 ```
 
 ```
-## R version 3.0.0 (2013-04-03)
+## R version 3.0.1 (2013-05-16)
 ## Platform: x86_64-apple-darwin10.8.0 (64-bit)
 ## 
 ## locale:
@@ -439,7 +441,7 @@ sessionInfo()
 ## 
 ## loaded via a namespace (and not attached):
 ## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
-## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.0    whisker_0.3-2 
+## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.1    whisker_0.3-2 
 ## [9] yaml_2.1.7
 ```
 

@@ -72,10 +72,13 @@
   </hgroup>
   <article>
     <ul>
-<li>R Package shiny from RStudio supplies</li>
+<li>R Package shiny from RStudio supplies
+
+<ul>
 <li>interactive web application  / dynamic HTML-Pages with plain R</li>
 <li>GUI for own needs</li>
 <li>Website as server</li>
+</ul></li>
 </ul>
 
   </article>
@@ -110,7 +113,7 @@
 <li>Edit <code>global.r</code></li>
 <li>Edit <code>ui.r</code></li>
 <li>Edit <code>server.r</code></li>
-<li><code>R&gt; shiny::runApp(&quot;Example Hello Shiny&quot;)</code></li>
+<li><code>R&gt; shiny::runApp(&quot;HelloShiny&quot;)</code></li>
 </ol>
 
   </article>
@@ -124,7 +127,9 @@
   <article>
     <p>This file contains global variables, libraries etc.  [optional]</p>
 
-<pre><code class="r">library(googleVis)
+<pre><code class="r">## E.g.
+library(googleVis)
+The_Answer &lt;- 42
 </code></pre>
 
   </article>
@@ -559,7 +564,7 @@ slidify(&quot;index.Rmd&quot;)
     <pre><code class="r">sessionInfo()
 </code></pre>
 
-<pre><code>## R version 3.0.0 (2013-04-03)
+<pre><code>## R version 3.0.1 (2013-05-16)
 ## Platform: x86_64-apple-darwin10.8.0 (64-bit)
 ## 
 ## locale:
@@ -573,7 +578,7 @@ slidify(&quot;index.Rmd&quot;)
 ## 
 ## loaded via a namespace (and not attached):
 ## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
-## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.0    whisker_0.3-2 
+## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.1    whisker_0.3-2 
 ## [9] yaml_2.1.7
 </code></pre>
 
