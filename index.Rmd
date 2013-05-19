@@ -25,7 +25,7 @@ github      :
 
 ## Introduction of shiny
 
-* R Package shiny from RStudio supplies
+* R Package shiny from RStudio supplies:
   * interactive web application  / dynamic HTML-Pages with plain R
   * GUI for own needs
   * Website as server
