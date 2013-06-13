@@ -1,6 +1,6 @@
 ---
 title       : googleVis on shiny
-subtitle    : Lancaster University, 21 May 2013
+subtitle    : UseR! 2013
 author      : Markus Gesmann
 job         : Maintainer of the googleVis and ChainLadder packages
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -167,7 +167,7 @@ height="100%" frameborder="0">Loading</iframe>
 
 ## Example 2: server.R
 ```{r exmpl2_server, eval=FALSE, tidy=FALSE}
-# Diego de Casillo, February 2013
+# Diego de Castillo, February 2013
 library(datasets)
 library(googleVis)
 shinyServer(function(input, output) {
@@ -351,6 +351,36 @@ shinyUI(pageWithSidebar(
 )
 ```
 
+---
+
+## Reactive model
+
+Three objects build the framework:
+
+* reactive source     [form input] ![source](assets/img/source.png)
+
+* reactive conductor  [db-connect / calculate]
+
+* reactive endpoint    [plot/table]
+
+---
+
+## Reactive model
+
+![](assets/img/p1.png)
+
+
+---
+
+## Reactive model
+
+![](assets/img/p2.png)
+
+---
+
+## Reactive model
+
+![](assets/img/p3.png)
 
 ---
 

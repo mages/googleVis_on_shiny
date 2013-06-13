@@ -35,7 +35,7 @@
     <slide class="title-slide segue nobackground">
       <hgroup class="auto-fadein">
         <h1>googleVis on shiny</h1>
-        <h2>Lancaster University, 21 May 2013</h2>
+        <h2>UseR! 2013</h2>
         <p>Markus Gesmann<br/>Maintainer of the googleVis and ChainLadder packages</p>
       </hgroup>
       <a href="https://github.com/mages/googleVis_on_shiny/zipball/gh-pages" class="example">
@@ -72,7 +72,7 @@
   </hgroup>
   <article>
     <ul>
-<li>R Package shiny from RStudio supplies
+<li>R Package shiny from RStudio supplies:
 
 <ul>
 <li>interactive web application  / dynamic HTML-Pages with plain R</li>
@@ -266,7 +266,7 @@ height="100%" frameborder="0">Loading</iframe>
     <h2>Example 2: server.R</h2>
   </hgroup>
   <article>
-    <pre><code class="r"># Diego de Casillo, February 2013
+    <pre><code class="r"># Diego de Castillo, February 2013
 library(datasets)
 library(googleVis)
 shinyServer(function(input, output) {
@@ -494,6 +494,56 @@ shinyUI(pageWithSidebar(
 
       <slide class="" id="slide-23" style="background:;">
   <hgroup>
+    <h2>Reactive model</h2>
+  </hgroup>
+  <article>
+    <p>Three objects build the framework:</p>
+
+<ul>
+<li><p>reactive source     [form input] <img src="assets/img/source.png" alt="source"></p></li>
+<li><p>reactive conductor  [db-connect / calculate]</p></li>
+<li><p>reactive endpoint    [plot/table]</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Reactive model</h2>
+  </hgroup>
+  <article>
+    <p><img src="assets/img/p1.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Reactive model</h2>
+  </hgroup>
+  <article>
+    <p><img src="assets/img/p2.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Reactive model</h2>
+  </hgroup>
+  <article>
+    <p><img src="assets/img/p3.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-27" style="background:;">
+  <hgroup>
     <h2>Further reading and examples</h2>
   </hgroup>
   <article>
@@ -510,7 +560,7 @@ shinyUI(pageWithSidebar(
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-24" style="background:;">
+      <slide class="" id="slide-28" style="background:;">
   <hgroup>
     <h2>The End. So what ...?</h2>
   </hgroup>
@@ -525,7 +575,7 @@ shinyUI(pageWithSidebar(
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-25" style="background:;">
+      <slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>How I created these slides</h2>
   </hgroup>
@@ -541,7 +591,7 @@ slidify(&quot;index.Rmd&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-26" style="background:;">
+      <slide class="" id="slide-30" style="background:;">
   <hgroup>
     <h2>Contact</h2>
   </hgroup>
@@ -556,7 +606,7 @@ slidify(&quot;index.Rmd&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-      <slide class="" id="slide-27" style="background:;">
+      <slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Session Info</h2>
   </hgroup>
@@ -568,18 +618,17 @@ slidify(&quot;index.Rmd&quot;)
 ## Platform: x86_64-apple-darwin10.8.0 (64-bit)
 ## 
 ## locale:
-## [1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+## [1] de_DE.UTF-8/de_DE.UTF-8/de_DE.UTF-8/C/de_DE.UTF-8/de_DE.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] slidify_0.3.3
+## [1] slidify_0.3.3 knitr_1.2    
 ## 
 ## loaded via a namespace (and not attached):
-## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
-## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.1    whisker_0.3-2 
-## [9] yaml_2.1.7
+## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    markdown_0.5.5
+## [5] stringr_0.6.2  tools_3.0.1    whisker_0.3-2  yaml_2.1.7
 </code></pre>
 
   </article>

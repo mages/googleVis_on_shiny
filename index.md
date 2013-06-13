@@ -1,6 +1,6 @@
 ---
 title       : googleVis on shiny
-subtitle    : Lancaster University, 21 May 2013
+subtitle    : UseR! 2013
 author      : Markus Gesmann
 job         : Maintainer of the googleVis and ChainLadder packages
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -25,7 +25,7 @@ github      :
 
 ## Introduction of shiny
 
-* R Package shiny from RStudio supplies
+* R Package shiny from RStudio supplies:
   * interactive web application  / dynamic HTML-Pages with plain R
   * GUI for own needs
   * Website as server
@@ -176,7 +176,7 @@ height="100%" frameborder="0">Loading</iframe>
 ## Example 2: server.R
 
 ```r
-# Diego de Casillo, February 2013
+# Diego de Castillo, February 2013
 library(datasets)
 library(googleVis)
 shinyServer(function(input, output) {
@@ -375,6 +375,36 @@ shinyUI(pageWithSidebar(
 ```
 
 
+---
+
+## Reactive model
+
+Three objects build the framework:
+
+* reactive source     [form input] ![source](assets/img/source.png)
+
+* reactive conductor  [db-connect / calculate]
+
+* reactive endpoint    [plot/table]
+
+---
+
+## Reactive model
+
+![](assets/img/p1.png)
+
+
+---
+
+## Reactive model
+
+![](assets/img/p2.png)
+
+---
+
+## Reactive model
+
+![](assets/img/p3.png)
 
 ---
 
@@ -431,17 +461,16 @@ sessionInfo()
 ## Platform: x86_64-apple-darwin10.8.0 (64-bit)
 ## 
 ## locale:
-## [1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+## [1] de_DE.UTF-8/de_DE.UTF-8/de_DE.UTF-8/C/de_DE.UTF-8/de_DE.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] slidify_0.3.3
+## [1] slidify_0.3.3 knitr_1.2    
 ## 
 ## loaded via a namespace (and not attached):
-## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
-## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.1    whisker_0.3-2 
-## [9] yaml_2.1.7
+## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    markdown_0.5.5
+## [5] stringr_0.6.2  tools_3.0.1    whisker_0.3-2  yaml_2.1.7
 ```
 
