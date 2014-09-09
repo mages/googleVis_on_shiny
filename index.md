@@ -227,8 +227,7 @@ height="100%" frameborder="0">Loading</iframe>
 ## Prepare data to be displayed
 ## Load presidential election data by state from 1932 - 2012
 library(RCurl)
-dat <- getURL("https://dl.dropboxusercontent.com/u/7586336/blogger/US%20Presidential%20Elections.csv",
-               ssl.verifypeer=0L, followlocation=1L)
+dat <- getURL("https://dl.dropboxusercontent.com/u/7586336/blogger/US%20Presidential%20Elections.csv", ssl.verifypeer=0L, followlocation=1L)
 dat <- read.csv(text=dat)
 ## Add min and max values to the data
 datminmax = data.frame(state=rep(c("Min", "Max"),21), 
