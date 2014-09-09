@@ -114,7 +114,7 @@ height="100%" frameborder="0">Loading</iframe>
 
 ## Select data for a scatter chart
 
-<iframe src="https://mages.shinyapps.io/Example_1/" width="100%" 
+<iframe src="http://mages.shinyapps.io/Example_1/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 
@@ -165,7 +165,7 @@ shinyUI(pageWithSidebar(
 
 ## Interactive table
 
-<iframe src="https://mages.shinyapps.io/Example_2/" width="100%" 
+<iframe src="http://mages.shinyapps.io/Example_2/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 ---
@@ -214,7 +214,7 @@ shinyUI(pageWithSidebar(
 
 ## Animated geo chart
 
-<iframe src="https://mages.shinyapps.io/Example_3" width="100%" 
+<iframe src="http://mages.shinyapps.io/Example_3" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 ---
@@ -288,7 +288,7 @@ shinyUI(pageWithSidebar(
 
 ## googleVis with interaction
 
-<iframe src="http://glimmer.rstudio.com/mages/Interaction/" width="100%" 
+<iframe src="http://mages.shinyapps.io/Example_4/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 
