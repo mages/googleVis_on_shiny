@@ -25,7 +25,7 @@ github      :
 
 ## Introduction of shiny
 
-* R Package shiny from RStudio supplies
+* R Package shiny from RStudio supplies:
   * interactive web application  / dynamic HTML-Pages with plain R
   * GUI for own needs
   * Website as server
@@ -64,7 +64,6 @@ library(googleVis)
 The_Answer <- 42
 ```
 
-
 ---
 
 ## Getting started: server.R
@@ -82,7 +81,6 @@ shinyServer(function(input, output) {
          })
 })
 ```
-
 
 ---
 
@@ -102,7 +100,6 @@ shinyUI(pageWithSidebar(
    )
 ))
 ```
-
 
 ---
 
@@ -127,21 +124,22 @@ height="100%" frameborder="0">Loading</iframe>
 
 
 ```r
-# Contributed by Joe Cheng, February 2013 Requires googleVis version 0.4
-# and shiny 0.4 or greater
+# Contributed by Joe Cheng, February 2013  
+# Requires googleVis version 0.4 and shiny 0.4 or greater
 library(googleVis)
 
 shinyServer(function(input, output) {
-    datasetInput <- reactive({
-        switch(input$dataset, rock = rock, pressure = pressure, cars = cars)
-    })
-    output$view <- renderGvis({
-        # instead of renderPlot
-        gvisScatterChart(datasetInput(), options = list(width = 400, height = 400))
-    })
+  datasetInput <- reactive({
+    switch(input$dataset,
+           "rock" = rock,
+           "pressure" = pressure,
+           "cars" = cars)
+  })  
+  output$view <- renderGvis({ # instead of renderPlot
+    gvisScatterChart(datasetInput(), options=list(width=400, height=400))
+  })
 })
 ```
-
 
 
 ---
@@ -161,7 +159,6 @@ shinyUI(pageWithSidebar(
   )
 ))
 ```
-
 
 ---
 
@@ -193,7 +190,6 @@ shinyServer(function(input, output) {
 })
 ```
 
-
 ---
 
 ## Example 2: ui.R
@@ -214,12 +210,11 @@ shinyUI(pageWithSidebar(
 ))
 ```
 
-
 ---
 
 ## Animated geo chart
 
-<iframe src="http://glimmer.rstudio.com/mages/LancasterExample_3/" width="100%" 
+<iframe src="git@github.com:mages/googleVis_on_shiny.git" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 ---
@@ -231,11 +226,10 @@ height="100%" frameborder="0">Loading</iframe>
 ## Markus Gesmann, February 2013
 ## Prepare data to be displayed
 ## Load presidential election data by state from 1932 - 2012
-url <- paste0("http://www.google.com/fusiontables/api/query?",
-              "sql=SELECT+*+FROM+1RPEUiwiM092IxMew7LhzEmMDvqPomAA7kqK1qa4")
-
-dat <- read.csv(url, stringsAsFactors=TRUE)
-
+library(RCurl)
+dat <- getURL("https://dl.dropboxusercontent.com/u/7586336/blogger/US%20Presidential%20Elections.csv",
+               ssl.verifypeer=0L, followlocation=1L)
+dat <- read.csv(text=dat)
 ## Add min and max values to the data
 datminmax = data.frame(state=rep(c("Min", "Max"),21), 
                        demVote=rep(c(0, 100),21),
@@ -243,7 +237,6 @@ datminmax = data.frame(state=rep(c("Min", "Max"),21),
 dat <- rbind(dat[,1:3], datminmax)
 require(googleVis)
 ```
-
 
 ---
 
@@ -271,7 +264,6 @@ shinyServer(function(input, output) {
 })
 ```
 
-
 ---
 
 ## Example 3: ui.R
@@ -292,7 +284,6 @@ shinyUI(pageWithSidebar(
   )
 ))
 ```
-
 
 ---
 
@@ -326,7 +317,6 @@ shinyServer(function(input, output) {
   })
 ```
 
-
 ---
 
 ## Example 4: server.R / part 2
@@ -347,7 +337,6 @@ shinyServer(function(input, output) {
   outputOptions(output, "selectedOut", suspendWhenHidden=FALSE)   
 })
 ```
-
 
 ---
 
@@ -373,7 +362,6 @@ shinyUI(pageWithSidebar(
       ))))
 )
 ```
-
 
 
 ---
@@ -409,7 +397,6 @@ author("GoogleVis_on_shiny")
 slidify("index.Rmd")
 ```
 
-
 ----
 
 ## Contact
@@ -427,8 +414,8 @@ sessionInfo()
 ```
 
 ```
-## R version 3.0.1 (2013-05-16)
-## Platform: x86_64-apple-darwin10.8.0 (64-bit)
+## R version 3.1.1 (2014-07-10)
+## Platform: x86_64-apple-darwin13.1.0 (64-bit)
 ## 
 ## locale:
 ## [1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
@@ -437,11 +424,10 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] slidify_0.3.3
+## [1] slidify_0.4.5
 ## 
 ## loaded via a namespace (and not attached):
-## [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
-## [5] markdown_0.5.4 stringr_0.6.2  tools_3.0.1    whisker_0.3-2 
-## [9] yaml_2.1.7
+## [1] digest_0.6.4   evaluate_0.5.5 formatR_1.0    knitr_1.6     
+## [5] markdown_0.7.4 stringr_0.6.2  tools_3.1.1    whisker_0.3-2 
+## [9] yaml_2.1.13
 ```
-
