@@ -114,7 +114,7 @@ height="100%" frameborder="0">Loading</iframe>
 
 ## Select data for a scatter chart
 
-<iframe src="http://mages.shinyapps.io/Example_1/" width="100%" 
+<iframe src="http://glimmer.rstudio.com/mages/LancasterExample_1/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 
@@ -165,7 +165,7 @@ shinyUI(pageWithSidebar(
 
 ## Interactive table
 
-<iframe src="http://mages.shinyapps.io/Example_2/" width="100%" 
+<iframe src="http://glimmer.rstudio.com/mages/LancasterExample_2/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 ---
@@ -214,8 +214,7 @@ shinyUI(pageWithSidebar(
 
 ## Animated geo chart
 
-<iframe src="http://mages.shinyapps.io/Example_3" width="100%" 
-height="100%" frameborder="0">Loading</iframe>
+<img src="http://2.bp.blogspot.com/-EfrVZxmBXfA/VQQUd5ANmWI/AAAAAAAAB78/Z_AdZXMZ60A/s1600/geochart.png" />
 
 ---
 
@@ -227,7 +226,8 @@ height="100%" frameborder="0">Loading</iframe>
 ## Prepare data to be displayed
 ## Load presidential election data by state from 1932 - 2012
 library(RCurl)
-dat <- getURL("https://dl.dropboxusercontent.com/u/7586336/blogger/US%20Presidential%20Elections.csv", ssl.verifypeer=0L, followlocation=1L)
+url <- "https://raw.githubusercontent.com/mages/diesunddas/master/Data/US%20Presidential%20Elections.csv"
+dat <- getURL(url, ssl.verifypeer=0L, followlocation=1L)
 dat <- read.csv(text=dat)
 ## Add min and max values to the data
 datminmax = data.frame(state=rep(c("Min", "Max"),21), 
@@ -288,7 +288,7 @@ shinyUI(pageWithSidebar(
 
 ## googleVis with interaction
 
-<iframe src="http://mages.shinyapps.io/Example_4/" width="100%" 
+<iframe src="http://glimmer.rstudio.com/mages/Interaction/" width="100%" 
 height="100%" frameborder="0">Loading</iframe>
 
 
@@ -402,7 +402,7 @@ slidify("index.Rmd")
 
 * Markus Gesmann
 * [markus.gesmann gmail.com](mailto:markus.gesmann@gmail.com)
-* My blog: [http://lamages.blogspot.com](http://lamages.blogspot.com)
+* My blog: [http://www.magesblog.com](http://www.magesblog.com)
 
 ---
 
